@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="max-w-6xl mx-auto">
+        <header class="grid grid-cols-[auto_44px_44px] gap-2 p-2 border-b">
+            <img src="images/logo.svg" alt="main image" width="170" height="58">
+            <a class="border w-11 h-11 flex justify-around rounded-full hover:bg-slate-100" href="#"><img class="w-4"
+                    src="images/person-fill.svg" alt="an account picture"></a>
+            <a class="border w-11 h-11 flex justify-around rounded-full hover:bg-slate-100" href="#"><img class="w-4"
+                    src="images/basket-fill.svg" alt="picture of shopping"></a>
+        </header>
+
+        <nav class="bg-pink-100">
+            <ul class="flex flex-col sm:flex-row sm:border-b border-rose-400">
+                <li class="text-pink-500 border-b border-neutral-700 sm:border-b-0">
+                    <a href="#" class="block py-2 px-3 hover:bg-pink-200">Toner</a>
+                </li>
+                <li class="text-pink-500 border-b border-neutral-700 sm:border-b-0">
+                    <a href="#" class="block py-2 px-3 hover:bg-pink-200">Masks</a>
+                </li>
+                <li class="text-pink-500 border-b border-neutral-700 sm:border-b-0">
+                    <a href="#" class="block py-2 px-3 hover:bg-pink-200">Cleansers</a>
+                </li>
+                <li class="text-blue-500 border-b border-neutral-700 sm:border-b-0">
+                    <a href="#" class="block py-2 px-3 hover:bg-pink-200">Cart</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1 class="text-blue-500 text-2xl px-2 py-3">Cart</h1>
+            <div class="md: flex">
+
+                <section class=" m-2 md:w-1/2">
+                    <h2
+                        class="text-purple-400 text-1 font-bold uppercase text-xl mt-2 border-b-1 border-indigo-400 my-4">
+                        CheckOut</h2>
+
+
+                    <div>
+                        <label class="uppercase font-medium text-gray-600">First Name<input type="text"
+                                name="first name"
+                                class="mb-2 block rounded-sm border bg-pink-50 border-indigo-300 font-normal text-gray-400 shadow-sm mt-.5 pr-70 p-1"
+                                placeholder="First Name" /></label>
+                    </div>
+
+                    <div>
+                        <label class=" uppercase font-medium text-gray-600">Last Name<input type="text" name="last name"
+                                class="mb-2 block rounded-sm border bg-pink-50 border-indigo-300 font-normal text-gray-400 shadow-sm mt-.5 pr-70 p-1"
+                                placeholder="Last Name" /></label>
+                    </div>
+
+                    <div>
+                        <label class=" uppercase font-medium text-gray-600">Phone #<input type="tel" name="telephone"
+                                class="mb-2 block rounded-sm border bg-pink-50 border-indigo-300 font-normal text-gray-400 shadow-sm mt-.5 pr-70 p-1"
+                                placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" /></label>
+                    </div>
+
+                    <div>
+                        <label class=" uppercase font-medium text-gray-600">Address<input type="text" name="address"
+                                class="mb-2 block rounded-sm border bg-pink-50 border-indigo-300 font-normal text-gray-400 shadow-sm mt-.5 pr-70 p-1"
+                                placeholder="Address" /></label>
+                    </div>
+
+                    <div>
+                        <label class=" uppercase font-medium text-gray-600">City<input type="text" name="city"
+                                class="mb-2 block rounded-sm border bg-pink-50 border-indigo-300 font-normal text-gray-400 shadow-sm mt-.5 pr-70 p-1"
+                                placeholder="City" /></label>
+                    </div>
+
+                    <div>
+                        <label class=" uppercase font-medium text-gray-600">Zip Code<input type="text" name="zip"
+                                class="mb-2 block rounded-sm border bg-pink-50 border-indigo-300 font-normal text-gray-400 shadow-sm mt-.5 pr-70 p-1"
+                                placeholder="Zip #" /></label>
+                    </div>
+
+                    <label class=" uppercase font-medium text-gray-600">State</label>
+
+                    <select
+                        class="mb-2 block rounded-sm border bg-pink-50 border-indigo-300 font-normal text-gray-400 shadow-sm mt-.5 pr-75 p-1">
+                        <option value="" selected="selected">Select a State</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="DC">District Of Columbia</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+
+
+
+                    <h2 class="text-purple-400 text-l font-bold uppercase mt-8 border-b-2</div>">
+                        Pricing</h2>
+                    <div class="border rounded-xl border-indigo-200 bg-pink-100">
+                        <label class="grid grid-cols-[22px_auto_100px] space-x-1 p-2 border-b-2 border-slate-300">
+                            <input type="radio" name="ship" value="business" checked />
+                            <div class="text-pink-500 font-semibold hover:text-indigo-400">Business<span
+                                    class="block text-gray-400 font-light text-xs"> A week or more</span></div>
+                            <div class="text-right font-bold pr-1">$7.00</div>
+                        </label>
+
+                        <label class="grid grid-cols-[22px_auto_100px] space-x-1 p-2 border-b-2 border-slate-300">
+                            <input type="radio" name="ship" value="Express" checked />
+                            <div class="text-pink-500 font-semibold hover:text-indigo-400">Express<span
+                                    class="block text-gray-400 font-light text-xs"> 2 to 4 business days</span></div>
+                            <div class="text-right font-bold pr-1">$17.00</div>
+                        </label>
+
+                        <label class="grid grid-cols-[22px_auto_100px] space-x-1 p-2 border-slate-300">
+                            <input type="radio" name="ship" value="Overnight" checked />
+                            <div class="text-pink-500 font-semibold hover:text-indigo-400">Overnight<span
+                                    class="block text-gray-400 font-light text-xs"> Next Day</span></div>
+                            <div class="text-right font-bold pr-1">$250.00</div>
+                        </label>
+                    </div>
+
+
+                    <h2 class="text-purple-400 text-l font-bold uppercase mt-8 border-b-2</div>">
+                        Payment</h2>
+
+                    <button
+                        class="transition ease-in-out duration-150 transform hover:scale-110 bg-indigo-300 hover:bg-pink-500 text-white font-bold py-2 px-4 rounded-full">Apple
+                        Pay</button>
+
+                    <button
+                        class="transition ease-in-out duration-150 transform hover:scale-110 bg-pink-300 hover:bg-pink-500 text-white font-bold py-2 px-4 rounded-full">Card</button>
+
+                    <button
+                        class="transition ease-in-out duration-150 transform hover:scale-110 bg-sky-300 hover:bg-pink-500 text-white font-bold py-2 px-4 rounded-full">PayPal</button>
+
+                    <button
+                        class="block transition ease-in-out duration-150 transform hover:scale-110 bg-purple-300 hover:bg-pink-500 text-white font-bold py-2 px-25 mt-4 rounded-full">Order</button>
+
+                </section>
+        </main>
+
+        <footer>
+            <p class="text-center text-sm text-zinc-500">&copy; Jazmin Gonzalez Garcia &bull; DWDD 2620</p>
+        </footer>
+
+
+    </div>
+</body>
